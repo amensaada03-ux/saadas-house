@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saada’s House – Parfums de Luxe</title>
+  <meta name="description" content="Saada’s House – Maison de parfums de luxe et d’exception." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root {
+      --gold: #d4af37;
+      --dark: #0b0b0b;
+      --dark-soft: #141414;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--dark);
+      color: #f5f5f5;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 2px;
+    }
+
+    nav .logo img { height: 48px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li:hover { color: var(--gold); }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1523293836414-f04a6e3ccfa5');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      letter-spacing: 6px;
+    }
+
+    header .signature {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2rem;
+      margin-top: 15px;
+      background: linear-gradient(120deg, #f6e27a, #d4af37, #b8962e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 2px 10px rgba(212,175,55,0.4);
+      animation: fadeUp 2s ease forwards;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section { padding: 120px 10%; }
+
+    .section-title {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 60px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #161616, #0e0e0e);
+      padding: 40px 30px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      transition: transform 0.4s ease;
+    }
+
+    .card:hover { transform: translateY(-10px); }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      color: var(--gold);
+    }
+
+    .about { text-align: center; color: #cfcfcf; }
+
+    /* CONTACT ICONS */
+    .contact-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .contact-icons a {
+      color: var(--gold);
+      font-size: 2rem;
+      text-decoration: none;
+      transition: transform 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 15px rgba(212,175,55,0.8);
+    }
+
+    .call-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 30px;
+      border-radius: 30px;
+      background: linear-gradient(120deg, #f6e27a, #d4af37);
+      color: #000;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #000;
+      padding: 40px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.6rem; }
+      nav ul { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="logo-saadas-house.png" alt="Saada’s House Logo">
+      <span>SAADA’S HOUSE</span>
+    </div>
+    <ul>
+      <li>Accueil</li>
+      <li>Collection</li>
+      <li>À propos</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <header>
+    <div>
+      <img src="logo-saadas-house.png" alt="Saada’s House Logo" style="height:120px; margin-bottom:30px; animation: fadeUp 1.5s ease forwards;">
+      <h1>SAADA’S HOUSE</h1>
+      <div class="signature">Saada’s Touch</div>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="section-title">La Collection</h2>
+    <div class="products">
+      <div class="card">
+        <img src="imperial.jpg" alt="Parfum L’Impérial" style="width:100%; border-radius:14px; margin-bottom:20px;">
+        <h3>L’Impérial</h3>
+        <p>Puissance, noblesse et élégance absolue. Une signature royale et affirmée.</p>
+      </div>
+      <div class="card">
+        <img src="magnat.jpg" alt="Parfum Magnat" style="width:100%; border-radius:14px; margin-bottom:20px;">
+        <h3>Magnat</h3>
+        <p>Charisme intense et présence dominante. Le parfum de l’autorité moderne.</p>
+      </div>
+      <div class="card">
+        <img src="valeria.jpg" alt="Parfum Valeria" style="width:100%; border-radius:14px; margin-bottom:20px;">
+        <h3>Valeria</h3>
+        <p>Délicatesse, grâce et féminité raffinée dans un sillage intemporel.</p>
+      </div>
+      <div class="card">
+        <img src="flavia.jpg" alt="Parfum Flavia" style="width:100%; border-radius:14px; margin-bottom:20px;">
+        <h3>Flavia</h3>
+        <p>Lumière, sensualité et élégance contemporaine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">L’Univers Saada’s House</h2>
+    <div class="about">
+      <p>
+        Saada’s House est une maison de parfums de luxe où chaque création est pensée comme une œuvre d’art.
+        Inspirée par la force, l’émotion et l’identité, la marque incarne un style affirmé et intemporel.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="social-icons">
+  <!-- Téléphone -->
+  <a href="tel:57110079" class="icon gold">
+    <i class="fas fa-phone"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/saadas_house/" 
+     target="_blank" 
+     class="icon gold">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/profile.php?id=61584743139777" 
+     target="_blank" 
+     class="icon gold">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+</div>
+
+  </section>
+
+  <footer>
+    © 2025 SAADA’S HOUSE — Parfums de Luxe
+  </footer>
+
+</body>
+</html>
